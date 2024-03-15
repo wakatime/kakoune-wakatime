@@ -45,7 +45,8 @@ def -hidden  wakatime-heartbeat -params 0..1 %{
       command="$command --write"
     fi
     if [ -n "$kak_cursor_byte_offset" ]; then
-      command="$command --cursorpos $kak_cursor_byte_offset"
+      cursorpos="$((${#kak_cursor_byte_offset}))"
+      command="$command --cursorpos $cursorpos"
     fi
     if [ -n "$kak_filetype" ]; then
       command="$command --alternate-language $kak_filetype"
