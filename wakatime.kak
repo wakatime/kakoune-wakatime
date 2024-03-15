@@ -1,10 +1,10 @@
-# wakatime.kak version 3.1.2
+# wakatime.kak version 4.0.0
 # By Nodyn
 
 decl str     wakatime_cli      "~/.wakatime/wakatime-cli"
 decl bool    wakatime_debug    true
 
-decl -hidden str  wakatime_version  "3.1.2"
+decl -hidden str  wakatime_version  "4.0.0"
 
 decl -hidden str  wakatime_beat_rate  120
 decl -hidden str  wakatime_last_file
